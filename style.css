@@ -1,4 +1,4 @@
-body { margin: 0; color: #666; font: normal 16px/20px Helvetica, Arial, sans-serif; background: #fff;}
+body { margin: 0; color: #666; font: normal 16px Helvetica, Arial, sans-serif; background: #fff;}
 .clear { clear: both;}
 p { margin: 0; padding: 0 0;}
 a { color: #0000ff; text-decoration: underline;}
@@ -46,13 +46,35 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none;}
 }
 
 .buttons a {
-	width: 136px;
-	border-radius: 5px;
-	padding: 5px 0;
 	text-decoration: none;
 	color: white;
-	margin: 10px;
+	line-height: 37px;
+}
+
+.buttons p {
+	width: 136px;
+	border-radius: 5px;
 	background-color: #febd10;
+	margin: 10px;
 	box-shadow: 0 5px 0 #293224;
 	transition: .3s;
+}
+
+.inline_li {
+	display: inline-block;
+}
+
+.contacts li {
+	color: #37a14c;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.logo_right {
+	display: inline-block;
+	width: 330px;
+	float: right;
+	position: absolute;
 }
