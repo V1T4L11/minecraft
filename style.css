@@ -1,5 +1,5 @@
 body { margin: 0; color: #666; font: normal 16px Helvetica, Arial, sans-serif; background: #fff;}
-.clear { clear: both;}
+.clear:after { clear: both;}
 p { margin: 0; padding: 0 0;}
 a { text-decoration: none;}
 /*a:hover { color: #3eca5a;}*/
@@ -11,13 +11,18 @@ strong { font-weight: bold;}
 em { font-style: italic;}
 form, menu, iframe { display: block; margin: 0; padding: 0; border: none;}
 ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
-* { outline: none;} 
+* { outline: none;}
+* { box-sizing: border-box; }
 
 
 .green_line {
 	background-color: #37a14c;
 	color: white;
 	width: 100%;
+}
+
+.white a {
+	color: white;
 }
 
 .resize {
@@ -33,7 +38,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 .social {
 	display: inline-block;
 	float: right;
-	padding: 8px 0;
+	padding: 8px 0 5px;
 }
 
 .contacts {
@@ -46,8 +51,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 }
 
 .buttons a {
-	text-decoration: none;
-	color: white;
+	display: block;
 	line-height: 37px;
 }
 
@@ -56,7 +60,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 	border-radius: 5px;
 	background-color: #febd10;
 	margin: 10px;
-	box-shadow: 0 5px 0 #293224;
+	box-shadow: 0 1px 0 #6d5d1e, 0 2px 0 #293224;
 	transition: .3s;
 }
 
@@ -75,18 +79,32 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 .logo_right {
 	display: inline-block;
 	width: 330px;
-	float: right;
-	position: absolute;
 }
 
 .menu_bg li {
 	display: inline-block;
+	width: 190px;
+	border-right: 1px solid #247634;
+}
+
+.menu_bg li:first-child {
+	border-left: 1px solid #247634;
 }
 
 .menu_bg a {
+	display: block;
 	line-height: 48px;
+	text-align: center;
 }
 
+.menu_bg a:hover {
+	background-color: lightgreen;
+}
+
+.sidebar {
+	width: 20%;
+	float: left;
+}
 .sidebar a {
 	display: block;
 	padding: 10px 15px;
@@ -102,6 +120,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 
 .topmenu > li {
 	position: relative;
+	border-bottom: 1px solid lightgrey;
 }
 
 .topmenu > li:last-child {
@@ -129,4 +148,25 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 
 .sidebar ul li:hover .submenu {
 	display: block;
+}
+
+.mainbar {
+	width: 77%;
+	float: right;
+}
+
+.article {
+	border-bottom: 1px solid lightgrey;
+}
+
+.tile {
+	float: left;
+	background-color: #37a14c;
+	color: white;
+	width: calc( 100% / 3 - 4px );
+}
+
+.tile time {
+	color: black;
+	font-weight: bold;
 }
