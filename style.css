@@ -1,5 +1,5 @@
 body { margin: 0; color: #666; font: normal 16px Helvetica, Arial, sans-serif; background: #fff;}
-.clear:after { clear: both;}
+.clear { clear: both;}
 p { margin: 0; padding: 0 0;}
 a { text-decoration: none;}
 /*a:hover { color: #3eca5a;}*/
@@ -31,22 +31,25 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 }
 
 .header_play {
-	display: inline-block;
+	float: left;
 	line-height: 45px;
 }
 
 .social {
-	display: inline-block;
 	float: right;
 	padding: 8px 0 5px;
 }
 
+.logo {
+	float: left;
+}
+
 .contacts {
-	display: inline-block;
+	float: left;
 }
 
 .buttons {
-	display: inline-block;
+	float: left;
 	text-align: center;
 }
 
@@ -77,8 +80,9 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 }
 
 .logo_right {
-	display: inline-block;
-	width: 330px;
+	float: right;
+	width: 350px;
+	margin-top: 30px;
 }
 
 .menu_bg li {
@@ -163,10 +167,28 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 	float: left;
 	background-color: #37a14c;
 	color: white;
-	width: calc( 100% / 3 - 4px );
+	margin: 50px 8px 20px;
+	width: calc( 100% / 3 - 16px );
 }
 
 .tile time {
 	color: black;
 	font-weight: bold;
+}
+
+.tile img {
+	width: 100%;
+}
+
+.yellow-line {
+	width: 100%;
+	background-color: #febd10;
+}
+
+.footer_contact {
+	float: right;
+}
+
+.logo_line a {
+	margin: 10px 15px;
 }
