@@ -42,6 +42,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 
 .logo {
 	float: left;
+	margin: 10px 0;
 }
 
 .contacts {
@@ -51,6 +52,7 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 .buttons {
 	float: left;
 	text-align: center;
+	padding-left: 26px;
 }
 
 .buttons a {
@@ -71,6 +73,11 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 	display: inline-block;
 }
 
+.contacts {
+	padding-top: 11px;
+	padding-left: 38px;
+}
+
 .contacts li {
 	color: #37a14c;
 }
@@ -88,21 +95,27 @@ ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style: none; }
 .menu_bg li {
 	display: inline-block;
 	width: 190px;
-	border-right: 1px solid #247634;
+	border-right: 1px solid #45d962;
 }
 
 .menu_bg li:first-child {
-	border-left: 1px solid #247634;
+	border-left: 1px solid #45d962;
 }
+
+/*.menu_bg a:first-child {
+	border-left: 1px solid #247634;
+}*/
 
 .menu_bg a {
 	display: block;
-	line-height: 48px;
+	line-height: 45px;
 	text-align: center;
+	/*text-decoration: bold;*/
+	/*border-right: 1px solid #247634;*/
 }
 
-.menu_bg a:hover {
-	background-color: lightgreen;
+.menu_bg li:hover {
+	background-color: #45d962;
 }
 
 .sidebar {
